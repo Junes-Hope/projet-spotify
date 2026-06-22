@@ -10,13 +10,13 @@
   </head>
   <body>
 
-    <header class="text-bg-primary p-3">
+    <header class="text-bg-primary p-3 text-center">
       <h1>Mes Musiques</h1>
       (The Living Tombsone addict [oui])
     </header>
 <br>
   
-  <div class="container text-center">
+  <div class="container">
     <div x-data="{ tracks: [] }"  x-init="tracks = await chargerTracks()">
   <!-- tracks est rempli, Alpine met à jour l'affichage automatiquement -->
       <template x-for="track in tracks">
